@@ -1,0 +1,23 @@
+{
+    "webmonconfig": {
+      "waittime": 10000,
+      "logto": "fs",
+      "timeout": {
+        "retrytimes": 0,
+        "action": "restart"
+      },
+      "http200": {
+        "retrytimes": 0,
+        "action": "nothing"
+      },
+      "http403": {
+        "retrytimes": 2,
+        "action": "restart"
+      },
+      "http500": {
+        "retrytimes": 1,
+        "action": "restart"
+      }
+    }
+  }
+  
